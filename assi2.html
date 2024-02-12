@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <div id="display" style="width: 50%; margin: auto;"></div>
+
+
+
+    <script>
+        for (i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                display.innerHTML += `<h3 align="center" style="color: blue">${i} is a FizzBuzz</h3>`
+                console.log(`${i} is a FizzBuzz`);
+            }
+            else if (i % 3 == 0) {
+                display.innerHTML += `<h3 align="center" style="color: green">${i} is a Fizz</h3>`
+                console.log(`${i} is a Fizz`);
+            } else if (i % 5 == 0) {
+                display.innerHTML += `<h3 align="center" style="color: red">${i} is a Buzz</h3>`
+                console.log(`${i} is a Buzz`);
+            } else {
+                display.innerHTML += `<h3 align="center" style="color: purple">${i} is Neither a Fizz, Buzz nor FizzBuzz`
+            }
+        }
+    </script>
+</body>
+
+</html>

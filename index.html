@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.js">
+</head>
+
+<body>
+    <div class="mx-auto col-7 d-flex align-items-center flex-column text-center bg-secondary mt-4 py-3">
+        <div>
+            <input type="number" placeholder="Enter number" id="number" class="form-control-lg border-0" autofocus>
+            <button onclick="see()" class="btn btn-outline-primary">Check</button>
+        </div>
+        <div id="Show" class="bg-success-subtle px-3 my-2 text-center"></div>
+    </div>
+    <div class="mx-auto col-7 d-flex align-items-center flex-column text-center bg-secondary-subtle mt-4 py-3">
+        <div>
+            <input type="number" placeholder="Enter number" id="ber" class="form-control-lg border-0" autofocus>
+            <button onclick="check()" class="btn btn-outline-primary">Check</button>
+        </div>
+        <div id="show" class="bg-success-subtle px-3 my-2 text-center"></div>
+    </div>
+
+    <script>
+        // for(var i=1; i<=10; i++){
+        //     console.log("I am a developer " + i);
+        // }
+        // for(var j=100; j>=1; j--){
+        //     console.log(j);
+        // }
+
+        function see() {
+            if (number.value % 3 == 0 && number.value % 5 == 0) {
+                document.getElementById("Show").innerHTML = "FizzBuzz"
+                Show.style.color = "Orange"
+            } else if (number.value % 3 == 0) {
+                document.getElementById("Show").innerHTML = "Fizz"
+                Show.style.color = "Blue"
+            } else if (number.value % 5 == 0) {
+                document.getElementById("Show").innerHTML = "Buzz"
+                Show.style.color = "Purple"
+            }else {
+                document.getElementById("Show").innerHTML = "Neither Fizz, Buzz nor FizzBuzz"
+                Show.style.color = "Purple"
+            }
+        }
+        function check() {
+            if (ber.value % 2 == 0) {
+                document.getElementById("show").innerHTML = "Even"
+                show.style.color = "Green"
+            } else {
+                document.getElementById("show").innerHTML = "Odd"
+                show.style.color = "Brown"
+            }
+        }
+    </script>
+</body>
+
+</html>
